@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hptouchsmart.codinblock_calci.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:id="@+id/tv_number_eval"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textSize="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/ans"
+            />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="1"
+        android:onClick="changeValue"
+        android:tag="1"
+
+        android:nestedScrollingEnabled="false" />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv_number_eval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:text="2"
+        android:tag="2"
+        android:onClick="changeValue"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv_number_eval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b3"
+        android:text="3"
+        android:onClick="changeValue"
+        android:tag="3"/>
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/tv_number_eval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bPlus"
+            android:text="+"
+            android:onClick="changeValue"
+            android:tag="+"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b4"
+                android:text="4"
+                android:onClick="changeValue"
+                android:tag="4"
+                />
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b5"
+                android:text="5"
+                android:onClick="changeValue"
+                android:tag="5"/>
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b6"
+                android:text="6"
+                android:onClick="changeValue"
+                android:tag="6"/>
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bMinus"
+                android:text="-"
+                android:onClick="changeValue"
+                android:tag="-"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b7"
+                android:text="7"
+                android:onClick="changeValue"
+                android:tag="7"
+                />
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b8"
+                android:text="8"
+                android:onClick="changeValue"
+                android:tag="8"/>
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b9"
+                android:text="9"
+                android:onClick="changeValue"
+                android:tag="9"/>
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bMultiply"
+                android:text="*"
+                android:onClick="changeValue"
+                android:tag="*"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c"
+                android:text="C"
+                android:onClick="clearAll"
+                />
+
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b0"
+
+                android:text="0"
+                android:onClick="changeValue"
+                android:tag="0"/>
+
+            <Button
+
+                android:layout_below="@id/tv_number_eval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bDivide"
+                android:layout_marginLeft="90dp"
+                android:text="/"
+                android:onClick="changeValue"
+                android:tag="/"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="="
+            android:onClick="calculate"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
